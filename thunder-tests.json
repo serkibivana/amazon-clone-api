@@ -1,0 +1,37 @@
+{
+  "requests": [
+    {
+      "name": "Get Root - Success Message",
+      "method": "GET",
+      "url": "http://localhost:5000/",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "none"
+      },
+      "tests": []
+    },
+    {
+      "name": "Create Payment Intent",
+      "method": "POST",
+      "url": "http://localhost:5000/payment/create?total=1000",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [
+        {
+          "name": "total",
+          "value": "1000",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "tests": []
+    }
+  ]
+}
